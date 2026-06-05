@@ -727,23 +727,17 @@ footer {
         </div>
       </div>
       <div class="project-card">
-  <div class="project-video-thumb" onclick="window.open('https://www.facebook.com/https://www.facebook.com/share/p/1TMq1nia7f/?mibextid=wwXIfr','_blank')">
-    <img src="https://img.youtube.com/vi/sSjAOQHw5Uw/hqdefault.jpg" alt="Modern Flat Renovation"/>
-    <div class="play-overlay">
-      <div class="play-btn" style="background:rgba(24,119,242,0.92)">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-        </svg>
+        <div class="project-video-thumb" onclick="openModal('flatModal','flatVideo')">
+          <img src="https://youtube.com/shorts/b8EUiLHXVTE/0.jpg" alt="Modern Flat Renovation"/>
+          <div class="play-overlay"><div class="play-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div></div>
+        </div>
+        <div class="project-body">
+          <span class="project-badge">Completed</span>
+          <div class="project-title">Modern Home Renovation</div>
+          <div class="project-meta">Despatch · 2026</div>
+          <div class="project-services">Renovations · Painting</div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="project-body">
-    <span class="project-badge">Completed</span>
-    <div class="project-title">Modern Flat Renovation</div>
-    <div class="project-meta">Uitenhage · 2025</div>
-    <div class="project-services">Renovations · Painting</div>
-  </div>
-</div>
       <div class="project-card">
         <div class="project-video-thumb" onclick="openModal('pavingModal','pavingVideo')">
           <img src="https://img.youtube.com/vi/wcWq97ViW9Q/0.jpg" alt="Driveway Paving"/>
@@ -943,6 +937,9 @@ footer {
 </div>
 <div id="roofModal" class="video-modal" onclick="if(event.target===this)closeModal('roofModal','roofVideo')">
   <div class="modal-inner"><button class="modal-close" onclick="closeModal('roofModal','roofVideo')">✕</button><div class="modal-video-wrap"><iframe id="roofVideo" src="" data-src="https://www.youtube.com/embed/nh_6bdMMTCo?autoplay=1&rel=0" allowfullscreen allow="autoplay; encrypted-media"></iframe></div></div>
+</div>
+  <div id="flatModal" class="video-modal" onclick="if(event.target===this)closeModal('flatModal','flatVideo')">
+  <div class="modal-inner"><button class="modal-close" onclick="closeModal('flatModal','flatVideo')">✕</button><div class="modal-video-wrap"><iframe id="flatVideo" src="" data-src="https://youtube.com/embed/b8EUiLHXVTE?autoplay=1&rel=0" allowfullscreen allow="autoplay; encrypted-media"></iframe></div></div>
 </div>
 
 
